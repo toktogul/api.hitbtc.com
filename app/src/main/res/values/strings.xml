@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cryptocurrencies</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_candles">CandlesActivity</string>
+</resources>
