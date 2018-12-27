@@ -14,8 +14,8 @@ class CandlesAdapter : ListAdapter<Candle, CandlesAdapter.ViewHolder>(diffCallba
 
     companion object {
         val diffCallback = object : DiffUtil.ItemCallback<Candle>() {
-            override fun areItemsTheSame(old: Candle?, new: Candle?) = old?.timestamp == new?.timestamp
-            override fun areContentsTheSame(old: Candle?, aNew: Candle?) = old == aNew
+            override fun areItemsTheSame(old: Candle, new: Candle) = old.timestamp == new.timestamp
+            override fun areContentsTheSame(old: Candle, aNew: Candle) = old == aNew
         }
     }
 

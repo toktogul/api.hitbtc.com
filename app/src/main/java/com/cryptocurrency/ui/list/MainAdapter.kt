@@ -15,8 +15,8 @@ class MainAdapter(private val onCurrencyClick: (Symbol) -> Unit) :
 
     companion object {
         val diffCallback = object : DiffUtil.ItemCallback<Symbol>() {
-            override fun areItemsTheSame(old: Symbol?, new: Symbol?) = old?.id == new?.id
-            override fun areContentsTheSame(old: Symbol?, new: Symbol?) = old == new
+            override fun areItemsTheSame(old: Symbol, new: Symbol) = old.id == new.id
+            override fun areContentsTheSame(old: Symbol, new: Symbol) = old == new
         }
     }
 
